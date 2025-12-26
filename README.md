@@ -1,6 +1,7 @@
 # Canteen Queue Optimization & Simulation
 
 > **Topic:** Operational Research & Statistical Computing
+
 > **Tech Stack:** R, RMarkdown, Iterative Algorithms
 
 ## 📌 Project Overview
