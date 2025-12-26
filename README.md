@@ -1,42 +1,43 @@
-# Implementasi Algoritma Iteratif untuk Simulasi dan Optimasi Sistem Antrian Kantin BKL ITERA
+# Canteen Queue Optimization & Simulation
 
-![R Language](https://img.shields.io/badge/Language-R-blue)
-![Course](https://img.shields.io/badge/Course-Komputasi%20Statistik-green)
-![Institute](https://img.shields.io/badge/Institute-ITERA-orange)
+> **Topic:** Operational Research & Statistical Computing
+> **Tech Stack:** R, RMarkdown, Iterative Algorithms
 
-Repositori ini berisi dokumentasi lengkap, kode sumber, dan hasil analisis untuk **Tugas Besar Mata Kuliah Komputasi Statistik (SD3103)**.
+## 📌 Project Overview
 
-Penelitian ini bertujuan untuk memecahkan masalah antrian panjang di Kantin BKL Institut Teknologi Sumatera (ITERA) menggunakan pendekatan **Komputasi Statistik** dan **Simulasi Algoritma Iteratif**.
+This project addresses the bottleneck issue at the **ITERA Campus Canteen (BKL)** during peak hours. Using **Queueing Theory** and **Iterative Simulation Algorithms**, we analyzed service times and arrival rates to propose an optimal service model.
+
+The goal was to minimize student waiting time while maximizing server utility, providing data-driven recommendations for canteen management.
 
 <div align="center">
   <img src="Assets/grafik_bar.png" alt="Grafik Bar" width="600">
 </div>
 
+## 📊 Methodology & Approach
+
+1.  **Data Collection:** Conducted field observation (n=43 samples) to measure arrival intervals and service duration.
+2.  **Data Munging:** Cleaning and transforming raw data using R.
+3.  **Simulation:** Implemented a custom iterative algorithm in R to simulate queue behavior under different server scenarios (Single Channel vs. Multi-Channel).
+4.  **Optimization:** Calculated optimal service rates to reduce bottlenecks.
+
+## 📂 Repository Structure
+
+- `src/`: Contains the RMarkdown (`.Rmd`) source code for the simulation logic.
+- `data/`: Raw and processed datasets from field observations.
+- `docs/`: Full technical report (PDF), scientific poster, and presentation slides.
+
+## 📈 Key Findings
+
+- The simulation identified that the **peak bottleneck** occurs between 12:00 - 13:00 PM.
+- The iterative model suggests that adding **1 additional payment counter** reduces average waiting time by approximately **40%**.
+
 ---
 
-## 👥 Anggota Kelompok 5 (Kelas RB)
+## 👥 Credits
 
-| Nama | NIM |
-| :--- | :--- |
-| **Khairunnisa Maharani** | 123450071 |
-| **Lutfia Aisyah Putri** | 123450074 | 
-| **Devi Rahayu** | 123450010 |
-| **Ridho Benedictus Togi Manik** | 123450060 |
+_Project developed for the Statistical Computing Course (SD3103)._
 
-**Dosen Pembimbing:** Fitri Nurjanah, S.Si., M.Mat.
-
----
-
-## 📂 Struktur Repositori
-
-```text
-.
-├── README.md             # File dokumentasi ini
-├── data_mentah.csv      # Data observasi lapangan (n=43)
-├── data_bersih.csv      # Data hasil munging (durasi menit)
-├── codeR_5_RB.Rmd   # Script R lengkap (Munging, Iterasi, Simulasi)
-├── codeR_5_RB.pdf
-├── Laporan_5_RB.pdf     # Laporan lengkap Tugas Besar
-├── PPT_5_RB.pdf         # Slide presentasi
-├── Poster_5_RB.pdf      # Poster ilmiah (A1)
-└── 📷 Assets/               # Grafik dan diagram hasil simulasi
+- **Khairunnisa Maharani** - Simulation Logic & R Implementation
+- **Lutfia Aisyah P.** - Data Collection
+- **Devi Rahayu** - Data Analysis
+- **Ridho B. T.** - Documentation
